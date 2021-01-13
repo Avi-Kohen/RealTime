@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="jumbotron">
+    <h1>רמי לוי</h1>
+    <img align='center' src="{{ url_for('static', filename='profile_pics/' + current_user.profile_image) }}">
+
+  </div>
+  <h2>כמות האנשים המותרת בעסק היא </h2>
+  <h2>{{current_user.counter }}</h2>
+  <a href='https://www.symptoma.com/en/info/covid-19'>Coronavirus Symptom</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=c1004e9c5919f5039a7cfb03c092d6070dfd8d58'></script>
+  <script type="text/javascript" src="https://freevisitorcounters.com/en/home/counter/782801/t/0"></script>
+  <link rel="stylesheet" href="master.css">
+  <h1>דירוג</h1>
+  <img align='left' src="static\profile_pics\144-1447985.png" width="200" height="40">
+{% endblock %}
